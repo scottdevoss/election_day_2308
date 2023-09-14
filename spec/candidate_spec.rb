@@ -5,7 +5,7 @@ RSpec.describe Candidate do
   describe '#initialize' do
     it 'can initialize' do
       diana = Candidate.new({name: "Diana D", party: :democrat})
-      expect(diana).to be_a Candidate
+      expect(diana).to be_a(Candidate)
     end
   end
 
