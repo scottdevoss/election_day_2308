@@ -21,5 +21,14 @@ RSpec.describe Race do
       expect(race.candidates).to eq([candidate1, candidate2])
     end
   end
+
+  describe '#open? and #close!' do
+    it 'can be open or closed' do
+      race = Race.new("Texas Governor")
+      expect(race.open?).to be true
+      race.close!
+      expect(race.open?).to be false
+    end
+  end
 end
   
